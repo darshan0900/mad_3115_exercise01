@@ -7,14 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeScreen: UIViewController {
 
-	@IBOutlet weak var heading: UILabel!{
-		didSet{
-			heading.sizeToFit()
-		}
-	}
-	
 	@IBOutlet weak var changeBgColor: UIButton!
 	
 	@IBOutlet weak var hintLabel: UILabel!{
@@ -39,7 +33,6 @@ class ViewController: UIViewController {
 		
 		let randomTextColor = UIColor( red: 1.0 - redColor, green: 1.0 - greenColor, blue: 1.0 - blueColor, alpha: 1 )
 		
-		heading.textColor = randomTextColor
 		hintLabel.textColor = randomTextColor
 	}
 }
